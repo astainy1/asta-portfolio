@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "tailwindcss/theme.css" layer(theme);
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 20);
+  --font-montserrat: "Montserrat";
+  --font-poppins: "poppins";
+}
+
+.scroll-w-0 {
+  scrollbar-width: none;
+}
