@@ -12,7 +12,7 @@ const NavItem = ({ isDark }) => {
   return (
     <>
       <section>
-        <p className="px-5 py-2 text-xl">
+        <p className="px-5 py-2 text-2xl">
           <strong>A</strong>sta
         </p>
       </section>
@@ -38,13 +38,13 @@ const NavItem = ({ isDark }) => {
           <section className=" hidden md:flex px-5 py-2 ring-1 ring-sky-400 rounded hover:border-transparent hover:bg-sky-500 hover:text-sky-50 cursor-pointer shadow-md shadow-sky-400 hover:shadow-none">
             <a href="#Contact">Contact</a>
           </section>
-          <section className="hidden md:flex px-5 py-2 hover:bg-sky-500 hover:text-sky-50 rounded cursor-pointer">
+          {/* <section className="hidden md:flex px-5 py-2 hover:bg-sky-500 hover:text-sky-50 rounded cursor-pointer">
             {isDark ? (
               <FaSun className="md:block" />
             ) : (
               <FaMoon className="md:block" />
             )}
-          </section>
+          </section> */}
         </section>
       </section>
 

@@ -3,9 +3,10 @@
 
 @theme {
   --color-mint-500: oklch(0.72 0.11 20);
-  --font-montserrat: "Montserrat";
   --font-poppins: "poppins";
 }
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 .scroll-w-0 {
   scrollbar-width: none;

@@ -9,10 +9,9 @@ import pic4 from "../../assets/4.jfif";
 import pic5 from "../../assets/5.jpg";
 
 const Project = () => {
-
-// Initialize state
-const [allCategory, setAllCategory] = useState("all");
-const scrollRef = useRef(null);
+  // Initialize state
+  const [allCategory, setAllCategory] = useState("all");
+  const scrollRef = useRef(null);
 
   // console.log(allCategory);
 
@@ -139,7 +138,7 @@ const scrollRef = useRef(null);
             <FaArrowRight />
           </button>
         </section>
-        <section className="flex flex-wrap justify-center align-middle gap-y-6 sm:gap-x-5 sm:max-w-[80%] sm:p-5 mt-10 ">
+        <section className="flex flex-wrap justify-center align-middle gap-y-6 sm:gap-x-5 sm:max-w-[75rem] sm:p-5 sm:grid sm:grid-cols-2 sm:gap-6 xl:grid-cols-3 mt-10 p-5">
           {projectCategory.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

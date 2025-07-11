@@ -16,13 +16,14 @@ const HeroSection = () => {
           <span>Web Developer </span>
         </section>
         <p className="md:max-w-[50%] font-light leading-6 tracking-[0.7px] ">
+
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
           perferendis deleniti velit. Amet nam iusto omnis ducimus perferendis.
           Cum repellat quo aut, ratione mollitia magni harum itaque laborum ut
           omnis?
         </p>
         <section className="mt-5 [&_a]:py-3 [&_a]:px-5 [&_a]:rounded-full [&_a]:ring [&_a]:ring-sky-500 [&_a]:hover:bg-sky-600 [&_a]:hover:ring-0 [&_a]:hover:text-sky-50 *:transition-all *:ease-in *:duration-[0.3s] [&_a]:font-light">
-          <a href="#">Contact Me</a>
+          <a href="#Contact">Contact Me</a>
         </section>
       </section>
     </>

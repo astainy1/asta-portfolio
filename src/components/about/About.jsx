@@ -27,7 +27,7 @@ const about = () => {
           saepe blanditiis!
         </p>
         <section className="mt-5 [&_a]:py-3 [&_a]:px-5 [&_a]:rounded-full [&_a]:ring [&_a]:ring-sky-500 [&_a]:bg-sky-600 [&_a]:hover:bg-sky-700 [&_a]:hover:ring-0 [&_a]:hover:text-sky-50 *:transition-all *:ease-in *:duration-[0.3s] [&_a]:font-light">
-          <a href="#" download={'./index.html'}>Download Resume</a>
+          <a href="https://drive.google.com/file/d/1PIsIvSyOAsS7ZX1wVASIbNAiri1W2Q0j/view?usp=drive_link" download={'./index.html'}>Download Resume</a>
         </section>
       </section>
     </>
