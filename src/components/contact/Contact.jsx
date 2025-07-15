@@ -108,7 +108,7 @@ export default function Contact() {
   return (
     <>
       <div id="Contact" className="mt-15 "></div>
-      <section className="row flex justify-center align-middle flex-col text-white mb-32 px-20 sm:px-0 md:px-0">
+      <section data-aos="fade-up" data-aos-delay="400" className="row flex justify-center align-middle flex-col text-white mb-32 px-20 sm:px-0 md:px-0">
         <section className="text-center [&_h1]:mb-2 [&_h1]:tracking-[5px] [&_span]:font-medium [&_span]:text-sky-300">
           <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl">
             Get In Touch
@@ -117,10 +117,10 @@ export default function Contact() {
         </section>
 
         {/* Contact form */}
-        <form
+        <form data-aos="fade-up" data-aos-delay="200"
           ref={contactForm}
           onSubmit={submitContact}
-          className="flex flex-col max-w-lg w-[100%] mx-auto my-20 gap-10 text-xl [&_input]:rounded [&_input]:ring-[0.5px] [&_input]:ring-white  [&_input]:outline-0 [&_select]:outline-0 [&_textarea]:outline-0 [&_textarea]:border-white [&_textarea]:ring-[0.5px] [&_select]:ring-[0.5px] [&_select]:border-white [&_input]:p-3 [&_select]:p-3 [&_textarea]:p-3  [&_input]:focus:ring-1 [&_input]:focus:ring-sky-400 [&_textarea]:focus:ring-sky-400 [&_textarea]:focus:ring-1 [&_select]:focus:ring-sky-400 [&_select]:focus:ring-1"
+          className="flex flex-col max-w-lg w-[100%] mx-auto my-20 gap-y-10 text-xl [&_input]:rounded [&_input]:ring-[0.5px] [&_input]:ring-white  [&_input]:outline-0 [&_select]:outline-0 [&_textarea]:outline-0 [&_textarea]:border-white [&_textarea]:ring-[0.5px] [&_select]:ring-[0.5px] [&_select]:border-white [&_input]:p-3 [&_select]:p-3 [&_textarea]:p-3  [&_input]:focus:ring-1 [&_input]:focus:ring-sky-400 [&_textarea]:focus:ring-sky-400 [&_textarea]:focus:ring-1 [&_select]:focus:ring-sky-400 [&_select]:focus:ring-1"
         >
           <section className="flex flex-col gap-3">
             <label htmlFor="name">Name</label>

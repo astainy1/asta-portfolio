@@ -8,7 +8,8 @@ const Menu = ({ onCloseMenu }) => {
 
   return (
     <>
-      <menu className={` ${styles.mainStyle}`}>
+      <menu   data-aos="fade-down"
+  data-aos-once="true" className={` ${styles.mainStyle}`}>
         <section className="text-right ">
           <span
             className="hover:bg-sky-200/15 cursor-pointer rounded px-3 py-3 transition-all duration-[0.3s] ease-in hover:text-slate-300"
