@@ -57,7 +57,7 @@ const Project = forwardRef((props, ref) => {
       category: "graphic_design",
       image: pic3,
       description: "Creative logo designed using Adobe Illustrator.",
-      link: "https://github.com/astainy1",
+      link: "https://pin.it/28HyiW0Ec",
     },
     {
       title: "Facial Recognition App",
@@ -71,14 +71,14 @@ const Project = forwardRef((props, ref) => {
       category: "software_troubleshooting",
       image: pic5,
       description: "Successfully diagnosed and fixed a Blue Screen of Death (BSOD) issue by identifying and resolving a memory overload problem on the client’s PC, ensuring stable and efficient system performance.",
-      link: "https://github.com/astainy1",
+      link: "",
     },
     {
       title: "Book Cover Design",
       category: "graphic_design",
       image: pic6,
       description: "Created a stunning book cover design for a client.",
-      link: "https://github.com/astainy1",
+      link: "https://pin.it/28HyiW0Ec",
     },
   ];
 

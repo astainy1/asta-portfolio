@@ -1,4 +1,5 @@
 {
+  "homepage": "https://astainy1.github.io/asta-portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,10 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch src/components/projects/projects.json --port 5009"
+    "server": "json-server --watch src/components/projects/projects.json --port 5009",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.5",
@@ -16,6 +20,7 @@
     "emailjs-com": "^3.2.0",
     "formik": "^2.4.6",
     "framer-motion": "^12.23.5",
+    "gh-pages": "^6.3.0",
     "json-server": "^1.0.0-beta.3",
     "lucide-react": "^0.525.0",
     "react": "^19.0.0",
