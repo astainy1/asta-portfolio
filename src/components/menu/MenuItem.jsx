@@ -1,9 +1,7 @@
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
-
 import { useScroll } from "../Scroll";
 
-
-const NavItem = ({ target, label, style}) => {
+const MenuItems = ({ target, label, style }) => {
   const { homeRef, aboutRef, servicesRef, projectsRef, contactRef } =
     useScroll();
 
@@ -20,23 +18,17 @@ const NavItem = ({ target, label, style}) => {
     targetRef?.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-
-
   return (
     <>
       <li onClick={handleClick} className={style}>
         <a>{label}</a>
       </li>
 
-      
-
       {/* Navbar for meduim devices /ends/ */}
 
       {/* Menu for small devices /starts/ */}
-
-     
     </>
   );
 };
 
-export default NavItem;
+export default MenuItems;

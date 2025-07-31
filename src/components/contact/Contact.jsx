@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, forwardRef } from "react";
 import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
 import Swal from "sweetalert2";
@@ -19,7 +19,7 @@ function SubmitButton({ btnName, btnState }) {
   );
 }
 
-export default function Contact() {
+const Contact = forwardRef((props, ref) => {
   const [submitBtn, setSubmitBtn] = useState(false);
   const contactForm = useRef();
   const [name, setName] = useState("");
@@ -107,7 +107,7 @@ export default function Contact() {
 
   return (
     <>
-      <div id="Contact" className="mt-15 "></div>
+      <div ref={ref} id="Contact" className="mb-15 "></div>
       <section data-aos="fade-up" data-aos-delay="400" className="row flex justify-center align-middle flex-col text-white mb-32 px-20 sm:px-0 md:px-0">
         <section className="text-center [&_h1]:mb-2 [&_h1]:tracking-[5px] [&_span]:font-medium [&_span]:text-sky-300">
           <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl">
@@ -194,4 +194,6 @@ export default function Contact() {
       </section>
     </>
   );
-}
+})
+
+export default Contact;

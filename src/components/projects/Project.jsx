@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, forwardRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import ProjectType from "./Project-type";
 import ProjectCard from "./Project-card";
@@ -9,7 +9,7 @@ import pic4 from "../../assets/4.jpg";
 import pic5 from "../../assets/5.jpeg";
 import pic6 from "../../assets/6.jpg";
 
-const Project = () => {
+const Project = forwardRef((props, ref) => {
   // Initialize state
   const [allCategory, setAllCategory] = useState("all");
   // const [arrowLeft, setArrowLeft] = useState(null);
@@ -70,7 +70,7 @@ const Project = () => {
       title: "Windows Blue Screen Error Solved",
       category: "software_troubleshooting",
       image: pic5,
-      description: "Resolved memory overload issue on client PC.",
+      description: "Successfully diagnosed and fixed a Blue Screen of Death (BSOD) issue by identifying and resolving a memory overload problem on the client’s PC, ensuring stable and efficient system performance.",
       link: "https://github.com/astainy1",
     },
     {
@@ -97,7 +97,7 @@ const Project = () => {
 
   return (
     <>
-      <div id="Projects" className="mt-15 "></div>
+      <div ref={ref} id="Projects" ></div>
       <section data-aos="fade-up" data-aos-delay="400" className="row *:text-white mx-auto flex flex-col items-center justify-center gap-4 align-middle mb-28 ">
         <section className="text-center [&_h1]:mb-2 [&_h1]:tracking-[5px] [&_span]:font-medium [&_span]:text-sky-300">
           <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl">
@@ -158,6 +158,6 @@ const Project = () => {
       </section>
     </>
   );
-};
+});
 
 export default Project;
