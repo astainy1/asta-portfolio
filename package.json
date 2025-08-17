@@ -10,8 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "json-server --watch src/components/projects/projects.json --port 5009",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build && echo > dist/.nojekyll",
+    "deploy": "gh-pages -d dist"
 
   },
   "dependencies": {
